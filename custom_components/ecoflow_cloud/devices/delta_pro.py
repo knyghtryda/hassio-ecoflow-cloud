@@ -20,6 +20,9 @@ class DeltaPro(BaseDevice):
                 .attr("bmsMaster.designCap", ATTR_DESIGN_CAPACITY, 0)
                 .attr("bmsMaster.fullCap", ATTR_FULL_CAPACITY, 0)
                 .attr("bmsMaster.remainCap", ATTR_REMAIN_CAPACITY, 0),
+            LevelSensorEntity(client, "ems.lcdShowSoc", const.COMBINED_BATTERY_LEVEL),
+            LevelSensorEntity(client, "bmsMaster.f32ShowSoc", const.MAIN_BATTERY_LEVEL_F32, False),
+            LevelSensorEntity(client, "ems.f32LcdShowSoc", const.COMBINED_BATTERY_LEVEL_F32, False),
             WattsSensorEntity(client, "pd.wattsInSum", const.TOTAL_IN_POWER),
             WattsSensorEntity(client, "pd.wattsOutSum", const.TOTAL_OUT_POWER),
 

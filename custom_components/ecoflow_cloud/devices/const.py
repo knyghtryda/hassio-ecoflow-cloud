@@ -69,6 +69,7 @@ DC_CHARGE_CURRENT_OPTIONS = {
 }
 
 COMBINED_BATTERY_LEVEL = "Battery Level"
+COMBINED_BATTERY_LEVEL_F32 = "Battery Level (Precise)"
 BATTERY_CHARGING_STATE = "Battery Charging State"
 
 ATTR_DESIGN_CAPACITY = "Design Capacity (mAh)"
@@ -76,6 +77,7 @@ ATTR_FULL_CAPACITY = "Full Capacity (mAh)"
 ATTR_REMAIN_CAPACITY = "Remain Capacity (mAh)"
 
 MAIN_BATTERY_LEVEL = "Main Battery Level"
+MAIN_BATTERY_LEVEL_F32 = "Main Battery Level (Precise)"
 TOTAL_IN_POWER = "Total In Power"
 SOLAR_IN_POWER = "Solar In Power"
 AC_IN_POWER = "AC In Power"
